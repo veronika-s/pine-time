@@ -1,7 +1,7 @@
 import { omitBy } from 'lodash';
 import { stringify } from 'querystring';
 
-const API_URL = 'https://geo.weather.gc.ca/geomet/features/collections';
+const API_URL = 'https://api.weather.gc.ca/collections';
 const DEFAULT_QUERY = { f: 'json' };
 
 export const apiClient = async ({ url, options = {}, query = {} }) => {
